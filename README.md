@@ -111,10 +111,25 @@ Listado de atributos.
 | 3   | ID_TRATAMIENTO         | integer |         | Tratamiento (Id_Tratamiento)        | X        |
 | 4   | ID_VICTIMA             | integer |         | Victima (id_victima)                | X        |
 
-
-
-Guia de uso de programa.
+Relaciones entre Entidades.
 ---------------------------
+
+•	Un hopsital lo pueden tener muchas victimas, pero cada victima solo puede tener un hospital.
+
+•	Una Victima puede tener a conctacto con varios allegados y un allegado puede ser tener  muchos contactos con victimas.
+
+•	Una Victima puede tener distintos tratamientos y un tipo tratamiento puede ser aplicado a varias victimas.
+
+
+Consideración de diseño.
+----------------------------
+ La tabla Contacto fue diseñada para romper la linealidad muchos a muchos entre victima, allegado y tipo de contacto. Ya que muchas victimas podian tener muchos allegados en comun con muchos tipos de conacto.
+ De igual forma TratamientoVictima para romper la linealidad de muchos a muchos entre tratamiento y victimas ya que varias victimas pueden tener multiples tratamientos.
+
+Lenguaje/Framework.
+---------------------------
+La API fue desarrollada con el framework de Java Spring Boot: gradle 3.0.4, con las dependencias Spring Web para realizar los diferentes endpoints solicitados. Ademas se utilizo Oracle Driver para tener acceso a la base de datos deuna forma mas facil y eficiente, ya que Spring Boot tiene un ORM lo que permite la facilidad de manejar bases de datos. 
+
 #### /cargarTemporal ####
 El programa permite cargar un archivo .csv mediante una API desarrollada en Java Spring Boot(gradle), dicha API cargara los datos a una tabla temporal en una imagen de Docker que se encuentra en una VM alojada de GCP. 
 
