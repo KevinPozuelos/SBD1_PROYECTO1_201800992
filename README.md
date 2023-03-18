@@ -28,9 +28,10 @@ Listado de atributos.
 ---------------------------
 ## Hospital
 
-No. | Nombre | Tipo | Primary | Forean | Not null 
-| 1 | ID_HOSPITAL | Integer | x |  | x 
-| 2 | NOMBRE | VARCHAR(50) |  |  | x 
+| No. | Nombre | Tipo | Primary | Forean | Not null |
+| --------- | --------- | --------- | --------- | --------- | --------- |
+| 1 | ID_HOSPITAL | Integer | x |  | x |
+| 2 | NOMBRE | VARCHAR(50) |  |  | x |
 
 
 Lista de entidades.
