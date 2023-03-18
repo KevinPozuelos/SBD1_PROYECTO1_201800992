@@ -24,15 +24,6 @@ Modelo Propuesto.
 ---------------------------
 ![Modelo Propuesto](https://i.imgur.com/GhE8akL.png)
 
-Listado de atributos.
----------------------------
-## Hospital
-
-| No. | Nombre | Tipo | Primary | Forean | Not null |
-| --------- | --------- | --------- | --------- | --------- | --------- |
-| 1 | ID_HOSPITAL | Integer | x |  | x |
-| 2 | NOMBRE | VARCHAR(50) |  |  | x |
-
 
 Lista de entidades.
 ---------------------------
@@ -49,6 +40,55 @@ Lista de entidades.
 • Tipo Contacto
 
 • Contacto
+
+Listado de atributos.
+---------------------------
+## Hospital
+
+| No. | Nombre | Tipo | Primary | Forean | Not null |
+| 1 | ID_HOSPITAL | Integer | x |  | x |
+| 2 | NOMBRE | VARCHAR(50) |  |  | x |
+
+## Victima
+
+| No. | Nombre | Tipo | Primary | Forean | Not null |
+| 1 | ID_Victima | Integer | x |  | x |
+| 2 | NOMBRE | VARCHAR(50) |  |  | x |
+| 3 | APELLIDO | VARCHAR(50) |  |  | x |
+| 4 | UBICACION | VARCHAR(50) |  |  | x |
+| 5 | fecha_primera_sospecha | TIMESTAMP(6) |  |  | x |
+| 6 | fecha_confirmacion | TIMESTAMP(6) |  |  | x |
+| 7 | fecha_muerte | TIMESTAMP(6) |  |  |  |
+| 8 | ESTADO VICTIMA | VARCHAR(100)|  |  |  |
+| 9 | ID_HOSPITAL | Integer|  | x |  |
+
+## Allegado
+
+| No. | Nombre            | Tipo            | Primary | Forean | Not null |
+| --- | ---------------- | ---------------| ------- | ------ | -------- |
+| 1   | id_allegado      | integer         | X       |        | X        |
+| 2   | nombre_allegado  | VARCHAR(100)    |         |        |     x     |
+| 3   | apellido_allegado| varchar(100)    |         |        |    x      |
+| 4   | fecha_conocio    | TIMESTAMP(6)   |         |        |     x     |
+
+## TIPO CONTACTO
+
+| No. | Nombre                 | Tipo         | Primary | Forean | Not null |
+| --- | --------------------- | ------------| ------- | ------ | -------- |
+| 1   | id_Tipo_contacto      | integer     | X       |        | X        |
+| 2   | nombre_tipo_contacto  | VARCHAR(100)|         |        | X        |
+
+## CONTACTO
+
+| No. | Nombre            | Tipo            | Primary | Forean                      | Not null |
+| --- | ---------------- | ---------------| ------- | ---------------------------| -------- |
+| 1   | ID_CONTACTO      | integer         | X       |                            | X        |
+| 2   | ID_VICTIMA       | integer         |         | x       | X        |
+| 3   | ID_ALLEGADO      | integer         |         | x       | X        |
+| 4   | ID_TIPO_CONTACTO | integer         |         | x        | X        |
+| 5   | FECHA_INICIO     | TIMESTAMP(6)   |         |                            |          |
+| 6   | FECHA_FIN        | TIMESTAMP(6)   |         |                            |          |
+
 
 Guia de uso de programa.
 ---------------------------
