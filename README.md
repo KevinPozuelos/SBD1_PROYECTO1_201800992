@@ -24,6 +24,17 @@ Modelo Propuesto.
 ---------------------------
 ![Modelo Propuesto](https://imgur.com/a/2Mq75jV)
 
+
+Lista de entidades.
+---------------------------
+• Hospital
+• Victima
+• Allegado
+• Tratamiento
+• Tratamiento-Victima
+• Tipo Contacto
+• Contacto
+
 Guia de uso de programa.
 ---------------------------
 #### /cargarTemporal ####
