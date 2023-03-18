@@ -28,11 +28,17 @@ Modelo Propuesto.
 Lista de entidades.
 ---------------------------
 • Hospital
+
 • Victima
+
 • Allegado
+
 • Tratamiento
+
 • Tratamiento-Victima
+
 • Tipo Contacto
+
 • Contacto
 
 Guia de uso de programa.
