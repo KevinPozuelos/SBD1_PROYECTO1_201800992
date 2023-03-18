@@ -46,12 +46,14 @@ Listado de atributos.
 ## Hospital
 
 | No. | Nombre | Tipo | Primary | Forean | Not null |
+| --- | ---------------- | ---------------| ------- | ------ | -------- |
 | 1 | ID_HOSPITAL | Integer | x |  | x |
 | 2 | NOMBRE | VARCHAR(50) |  |  | x |
 
 ## Victima
 
 | No. | Nombre | Tipo | Primary | Forean | Not null |
+| --- | ---------------- | ---------------| ------- | ------ | -------- |
 | 1 | ID_Victima | Integer | x |  | x |
 | 2 | NOMBRE | VARCHAR(50) |  |  | x |
 | 3 | APELLIDO | VARCHAR(50) |  |  | x |
@@ -88,6 +90,27 @@ Listado de atributos.
 | 4   | ID_TIPO_CONTACTO | integer         |         | x        | X        |
 | 5   | FECHA_INICIO     | TIMESTAMP(6)   |         |                            |          |
 | 6   | FECHA_FIN        | TIMESTAMP(6)   |         |                            |          |
+
+## TRATAMIENTO
+
+| No. | Nombre                  | Tipo            | Primary | Forean | Not null |
+| --- | ---------------------- | ---------------| ------- | ------ | -------- |
+| 1   | Id_Tratamiento          | integer         | X       |        | X        |
+| 2   | Nombre                  | VARCHAR2(100)   |         |        | X        |
+| 3   | FECHA_INICIO_TRATAMIENTO | TIMESTAMP(6)   |         |        |          |
+| 4   | FECHA_FIN_TRATAMIENTO    | TIMESTAMP(6)   |         |        |          |
+| 5   | EFECTIVIDAD             | NUMBER(2, 1)    |         |        | X        |
+| 6   | EFECTIVIDAD_VICTIMA     | NUMBER(2, 1)    |         |        | X        |
+
+##VICTIMA-TRATAMIENTO
+
+| No. | Nombre                 | Tipo    | Primary | Forean                               | Not null |
+| --- | ----------------------| ------- | ------- | ------------------------------------| -------- |
+| 1   | ID_TRATAMIENTO_VICTIMA | integer | X       |                                      | X        |
+| 2   | FECHA                  | date    |         |                                      |          |
+| 3   | ID_TRATAMIENTO         | integer |         | Tratamiento (Id_Tratamiento)        | X        |
+| 4   | ID_VICTIMA             | integer |         | Victima (id_victima)                | X        |
+
 
 
 Guia de uso de programa.
