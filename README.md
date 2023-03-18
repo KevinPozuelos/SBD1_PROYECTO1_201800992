@@ -22,7 +22,7 @@ Requerimientos del sistema.
 
 Modelo Propuesto.
 ---------------------------
-![Modelo Propuesto](https:/imgur.com/a/2Mq75jV)
+![Modelo Propuesto](https://imgur.com//a//2Mq75jV)
 
 
 Lista de entidades.
