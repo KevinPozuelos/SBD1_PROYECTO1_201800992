@@ -1,7 +1,7 @@
 package com.example.SBD1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Component;
+
 public class OracleQueryExecutor {
     private final JdbcTemplate jdbcTemplate;
 

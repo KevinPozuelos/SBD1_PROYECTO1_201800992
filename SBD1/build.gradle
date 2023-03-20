@@ -17,8 +17,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.jumpmind.symmetric:symmetric-csv:3.5.19'
+    implementation 'io.github.qiunet:CfgReader:7.0.5'
+    implementation 'com.epam:parso:2.0.14'
+	implementation 'org.keedio.commons:commons-csv:1.1-notrim'
 	runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.apache.commons:commons-csv:1.10.0'
 }
 
 tasks.named('test') {

@@ -1,0 +1,239 @@
+
+SQL*Loader: Release 18.0.0.0.0 - Production on Sun Mar 19 12:14:50 2023
+Version 18.5.0.0.0
+
+Copyright (c) 1982, 2018, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   [BD1]ArchivoControl.ctl
+Character Set UTF8 specified for all input.
+
+Data File:      DB_Excel.csv
+  Bad File:     ./.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TT1, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+NOMBRE_VICTIMA                      FIRST     *   ,  O(") CHARACTER            
+APELLIDO_VICTIMA                     NEXT     *   ,  O(") CHARACTER            
+DIRECCION_VICTIMA                    NEXT     *   ,  O(") CHARACTER            
+FECHA_PRIMERA_SOSPECHA               NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_PRIMERA_SOSPECHA, 'DD-MM-YYYY HH24:MI:SS')"
+FECHA_CONFIRMACION                   NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_CONFIRMACION, 'DD-MM-YYYY HH24:MI:SS')"
+FECHA_MUERTE                         NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_MUERTE, 'DD-MM-YYYY HH24:MI:SS')"
+ESTADO_VICTIMA                       NEXT     *   ,  O(") CHARACTER            
+NOMBRE_ASOCIADO                      NEXT     *   ,  O(") CHARACTER            
+APELLIDO_ASOCIADO                    NEXT     *   ,  O(") CHARACTER            
+FECHA_CONOCIO                        NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_CONOCIO, 'DD-MM-YYYY HH24:MI:SS')"
+CONTACTO_FISICO                      NEXT     *   ,  O(") CHARACTER            
+FECHA_INICIO_CONTACTO                NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_INICIO_CONTACTO, 'DD-MM-YYYY HH24:MI:SS')"
+FECHA_FIN_CONTACTO                   NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_FIN_CONTACTO, 'DD-MM-YYYY HH24:MI:SS')"
+NOMBRE_HOSPITAL                      NEXT     *   ,  O(") CHARACTER            
+DIRECCION_HOSPITAL                   NEXT     *   ,  O(") CHARACTER            
+UBICACION_VICTIMA                    NEXT     *   ,  O(") CHARACTER            
+FECHA_LLEGADA                        NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_LLEGADA, 'DD-MM-YYYY HH24:MI:SS')"
+FECHA_RETIRO                         NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_RETIRO, 'DD-MM-YYYY HH24:MI:SS')"
+TRATAMIENTO                          NEXT     *   ,  O(") CHARACTER            
+EFECTIVIDAD                          NEXT     *   ,  O(") CHARACTER            
+FECHA_INICIO_TRATAMIENTO             NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_INICIO_TRATAMIENTO, 'DD-MM-YYYY HH24:MI:SS')"
+FECHA_FIN_TRATAMIENTO                NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_TIMESTAMP(:FECHA_FIN_TRATAMIENTO, 'DD-MM-YYYY HH24:MI:SS')"
+EFECTIVIDAD_EN_VICTIMA               NEXT     *   ,  O(") CHARACTER            
+
+value used for ROWS parameter changed from 250 to 176
+Record 27: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 28: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 30: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 31: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 32: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 76: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 80: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 81: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 84: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 85: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 94: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 95: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 96: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 100: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 150: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 198: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 207: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 208: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 209: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 210: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 211: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 216: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 217: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 266: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 267: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 271: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 272: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 273: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 274: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 275: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 276: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 277: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 278: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 279: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 291: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 347: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 354: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 358: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 359: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 360: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 361: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 362: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 363: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 364: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 365: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 366: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 367: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 368: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 396: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 480: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 481: Rejected - Error on table TT1, column FECHA_CONOCIO.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+
+MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
+
+Table TT1:
+  430 Rows successfully loaded.
+  51 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                1044384 bytes(176 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:           528
+Total logical records rejected:        51
+Total logical records discarded:        0
+
+Run began on Sun Mar 19 12:14:50 2023
+Run ended on Sun Mar 19 12:15:30 2023
+
+Elapsed time was:     00:00:39.78
+CPU time was:         00:00:00.17

@@ -1,8 +1,11 @@
 package com.example.SBD1;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Map;
 
@@ -15,20 +18,11 @@ public class routes {
     @Autowired
     private OracleDao oracleDao;
 
-    @GetMapping("/cargarTemporal")
-    public void createTable() {
-        oracleDao.createTable();
-    }
-
-
-
 
 
     @GetMapping("/eliminarTemporal")
     public void eliminarTabla() {
         oracleDao.EliminarTT();}
-
-
 
     @GetMapping("/cargarModelo")
     public void cargarModelo(){
@@ -97,6 +91,19 @@ public class routes {
     @GetMapping("/eliminarModelo")
     public void EliminarModelo(){
         oracleDao.eliminarModelo();
+    }
+
+
+    @GetMapping("/cargarTemporal")
+    public String ejecutarBat() {
+        oracleDao.createTable();
+        try {
+            Runtime.getRuntime().exec("cmd /c start C:\\Users\\aller\\Desktop\\SBD1_PROYECTO1_201800992\\Ejecutor.bat");
+            return "Archivo .sh ejecutado correctamente.";
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "Error al ejecutar archivo .sh: " + e.getMessage();
+        }
     }
 
 

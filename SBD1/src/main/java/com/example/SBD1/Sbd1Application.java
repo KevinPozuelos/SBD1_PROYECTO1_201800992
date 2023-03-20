@@ -10,7 +10,7 @@ public class Sbd1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Sbd1Application.class, args);
 
-		logger.debug("Esto funciona");
+		logger.debug("YA SALIO BASES");
 	}
 
 	}
