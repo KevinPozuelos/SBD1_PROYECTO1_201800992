@@ -3,7 +3,7 @@ logging:
     com.example.SBD1: DEBUG
 spring:
   datasource:
-    url: jdbc:oracle:thin:@34.174.200.73:1521:ORCL18
+    url: jdbc:oracle:thin:@34.174.139.189:1521:ORCL18
     username: L4MH
     password: l4mh
     driver-class-name: oracle.jdbc.driver.OracleDriver
